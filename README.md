@@ -9,3 +9,6 @@ The test task is to code up this one page.
 * [x] for frontend please use scss + BEM methodology
 * [x] site must include subtle animations on content blocks to make it look more alive and engaging
 * [x] we will be looking for high attention to detail and creating the result that is as close to flawless as possible.
+
+## Live Preview
+[Koibird Website](https://argzon.github.io/koibird/)
