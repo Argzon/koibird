@@ -1,0 +1,234 @@
+@media screen and (max-width: 1220px) {
+  header {
+    .top {
+      .logo {
+        img {
+          width: 350px;
+        }
+      }
+    }
+    .menu {
+      margin-bottom: 30px;
+      margin-top: 10px;
+      &__nav {
+        margin-bottom: 0;
+        li {
+          padding: 20px 0;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+          &:not(:last-child) {
+            margin-right: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    .top {
+      margin-bottom: 30px;
+
+      .search {
+        display: none;
+      }
+      .mobileMenu {
+        display: block;
+      }
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      width: 100%;
+      margin-top: 0px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+      &__nav {
+        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #e0ff04;
+        height: auto;
+        position: relative;
+        li {
+          padding: 20px 0;
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+          &:not(:last-child) {
+            margin-right: 40px;
+          }
+        }
+        .dropdown {
+          &:hover {
+            .dropdown__menu {
+              display: none;
+            }
+          }
+          &__button {
+            display: inline;
+          }
+          &__menu {
+            display: none;
+            position: relative;
+            grid-template-columns: 1fr;
+            background: transparent;
+            padding: 0 20px;
+            padding-top: 20px;
+            li {
+              padding: 10px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  #hero {
+    padding-top: 120px;
+    height: 730px;
+    .content {
+      img {
+        width: 528px;
+      }
+    }
+  }
+  #instagramRegion {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer {
+    .footer {
+      &__content {
+        &__menu {
+          flex-direction: column;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .top {
+      justify-content: space-between;
+      margin-left: 20px;
+      margin-right: 20px;
+      .mobileMenu {
+        margin-right: 30px;
+      }
+      .logo {
+        img {
+          width: 175px;
+        }
+      }
+      .quicklinks {
+        &__links {
+          display: none;
+        }
+      }
+    }
+    .menu {
+      position: absolute;
+      &__nav {
+        margin-bottom: 0;
+      }
+      &__quicklinks {
+        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #c8e200;
+        height: auto;
+        position: relative;
+        list-style: none;
+        padding: 10px 20px;
+        margin: 0;
+        li {
+          padding: 20px 0;
+          a {
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+          }
+          &:not(:last-child) {
+            margin-right: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  #hero {
+    .content {
+      img {
+        width: 370px;
+      }
+    }
+  }
+
+  #strapline {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+  footer {
+    .footer {
+      &__content {
+        &__menu {
+          flex-direction: column;
+          margin-top: 15px;
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header {
+    .top {
+      margin-left: 10px;
+      margin-right: 10px;
+      .logo {
+        img {
+          width: 150px;
+        }
+      }
+      .mobileMenu {
+        margin-right: 10px;
+      }
+      .quicklinks {
+        &__icons {
+          padding: 0;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  #hero {
+    .content {
+      img {
+        width: 260px;
+      }
+    }
+  }
+  #instagramRegion {
+    grid-template-columns: 1fr 1fr 1fr;
+    .hashtagOverlay {
+      .hashtag {
+        a {
+          font-size: 27px;
+          padding: 7px 10px;
+        }
+      }
+    }
+  }
+}

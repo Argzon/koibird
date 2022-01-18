@@ -1,0 +1,205 @@
+@media screen and (max-width: 1220px) {
+  header .top .logo img {
+    width: 350px;
+  }
+  header .menu {
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  header .menu__nav {
+    margin-bottom: 0;
+  }
+  header .menu__nav li {
+    padding: 20px 0;
+  }
+  header .menu__nav li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  header .menu__nav li:not(:last-child) {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+  }
+  header .top {
+    margin-bottom: 30px;
+  }
+  header .top .search {
+    display: none;
+  }
+  header .top .mobileMenu {
+    display: block;
+  }
+  header .menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin-top: 0px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  header .menu__nav {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #e0ff04;
+    height: auto;
+    position: relative;
+  }
+  header .menu__nav li {
+    padding: 20px 0;
+  }
+  header .menu__nav li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  header .menu__nav li:not(:last-child) {
+    margin-right: 40px;
+  }
+  header .menu__nav .dropdown:hover .dropdown__menu {
+    display: none;
+  }
+  header .menu__nav .dropdown__button {
+    display: inline;
+  }
+  header .menu__nav .dropdown__menu {
+    display: none;
+    position: relative;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    background: transparent;
+    padding: 0 20px;
+    padding-top: 20px;
+  }
+  header .menu__nav .dropdown__menu li {
+    padding: 10px 0;
+  }
+  #hero {
+    padding-top: 120px;
+    height: 730px;
+  }
+  #hero .content img {
+    width: 528px;
+  }
+  #instagramRegion {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  footer .footer__content__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .top {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  header .top .mobileMenu {
+    margin-right: 30px;
+  }
+  header .top .logo img {
+    width: 175px;
+  }
+  header .top .quicklinks__links {
+    display: none;
+  }
+  header .menu {
+    position: absolute;
+  }
+  header .menu__nav {
+    margin-bottom: 0;
+  }
+  header .menu__quicklinks {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: #c8e200;
+    height: auto;
+    position: relative;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+  }
+  header .menu__quicklinks li {
+    padding: 20px 0;
+  }
+  header .menu__quicklinks li a {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  header .menu__quicklinks li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  header .menu__quicklinks li:not(:last-child) {
+    margin-right: 40px;
+  }
+  #hero .content img {
+    width: 370px;
+  }
+  #strapline {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+  footer .footer__content__menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .top {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  header .top .logo img {
+    width: 150px;
+  }
+  header .top .mobileMenu {
+    margin-right: 10px;
+  }
+  header .top .quicklinks__icons {
+    padding: 0;
+    margin-left: 15px;
+  }
+  #hero .content img {
+    width: 260px;
+  }
+  #instagramRegion {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  #instagramRegion .hashtagOverlay .hashtag a {
+    font-size: 27px;
+    padding: 7px 10px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
